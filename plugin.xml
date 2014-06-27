@@ -38,7 +38,7 @@
             <provider android:name="com.jcjee.plugins.EmailAttachmentProvider" android:authorities="com.jcjee.plugins.emailcomposer.provider"></provider>
         </config-file>-->
         
-        <config-file target="AndroidManifest.xml" parent="manifest">
+        <config-file target="AndroidManifest.xml" parent="application">
                 <activity android:launchMode="singleTask">
                     <intent-filter>
                         <action android:name="android.intent.action.MAIN" />
