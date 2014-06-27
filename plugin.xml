@@ -36,8 +36,18 @@
         </config-file>
         
         <config-file target="AndroidManifest.xml" parent="application">
-            <activity android:launchMode="singleTask" android:alwaysRetainTaskState="true" android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/app_name" android:name="genieShare" android:theme="@android:style/Theme.Black.NoTitleBar" >
-		    </activity>
+            <activity android:launchMode="singleTask" android:alwaysRetainTaskState="true" android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale" android:label="@string/app_name" android:name="genieShare" android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="genieshareapp" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
             <provider android:name="com.jcjee.plugins.EmailAttachmentProvider" android:authorities="com.jcjee.plugins.emailcomposer.provider"></provider>
         </config-file>
 
