@@ -34,9 +34,9 @@
             </feature>
         </config-file>
         
-        <!--<config-file target="AndroidManifest.xml" parent="application">
-            <provider android:name="com.jcjee.plugins.EmailAttachmentProvider" android:authorities="com.jcjee.plugins.emailcomposer.provider"></provider>
-        </config-file>-->
+        <config-file target="AndroidManifest.xml" parent="application">
+            <provider android:name="com.jcjee.plugins.EmailAttachmentProvider" android:authorities="com.jcjee.plugins.EmailComposer.provider"></provider>
+        </config-file>
         
         <!--<config-file target="AndroidManifest.xml" parent="application">
                 <activity android:name="genieShare" android:launchMode="singleTask" />
